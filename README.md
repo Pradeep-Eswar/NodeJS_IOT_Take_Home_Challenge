@@ -16,5 +16,13 @@ Finally both loadBuf and timeBuf is concat to a "dataBuf" and send it to Device_
 
 Device_Client process acts like a device which receives the OS load average data from Driver_Server parses the buffer values and retrives the os load average values and load duration seperately and display it to the user.
 
-# node-IPC  :
+# IPC Config for communication :
+
+The communication between two process happens using node-ipc which provides interprocess communication. The configuration for IPC is as follows :
+
+ipc.config.encoding    = 'hex'; ('hex' encoding for data sent on sockets)
+ipc.config.rawBuffer   = true;  ( Needs to be set to true for sending raw buffer data)
+ipc.config.sync        = false; ( Setting syncrhonous request to false)
+ipc.config.stopRetrying = true; ( Setting true will immediately stop trying )
+ipc.config.unlink = true;       ( Setting true so module will take care of deleting the IPC socket 
 
