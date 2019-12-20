@@ -21,8 +21,12 @@ Device_Client process acts like a device which receives the OS load average data
 The communication between two process happens using node-ipc which provides interprocess communication. The configuration for IPC is as follows :
 
 ipc.config.encoding    = 'hex'; ('hex' encoding for data sent on sockets)
+
 ipc.config.rawBuffer   = true;  ( Needs to be set to true for sending raw buffer data)
+
 ipc.config.sync        = false; ( Setting syncrhonous request to false)
+
 ipc.config.stopRetrying = true; ( Setting true will immediately stop trying )
+
 ipc.config.unlink = true;       ( Setting true so module will take care of deleting the IPC socket 
 
