@@ -12,7 +12,7 @@ The OS load average values are put in as map values and  OS load duration are gi
 
 Finally both loadBuf and timeBuf is concat to a "dataBuf" and send it to Device_Client process.
 
-# Process 1 (Device_Client) :
+# Process 2 (Device_Client) :
 
 Device_Client process acts like a device which receives the OS load average data from Driver_Server parses the buffer values and retrives the os load average values and load duration seperately and display it to the user.
 
