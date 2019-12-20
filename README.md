@@ -28,5 +28,5 @@ ipc.config.sync        = false; ( Setting syncrhonous request to false)
 
 ipc.config.stopRetrying = true; ( Setting true will immediately stop trying )
 
-ipc.config.unlink = true;       ( Setting true so module will take care of deleting the IPC socket 
+ipc.config.unlink = true;       ( Setting true so module will take care of deleting the IPC socket) 
 
